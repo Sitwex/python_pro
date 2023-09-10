@@ -1,0 +1,5 @@
+print("Я",end= " ")
+print("сегодня",end= " ")
+print("не",end= " ")
+print("устал",end= "")
+print("!")
