@@ -1,0 +1,5 @@
+print("(\\(\\")
+print("(-.-)")
+print("O_",end= "")
+print("(\")",end= "")
+print("(\")",end= "")
