@@ -1,0 +1,12 @@
+S='пРивет'
+i=193
+b=True
+print(type(S))
+print(type(i))
+print(type(b))
+#S=int(S)
+i=str(i)
+b=int(b)
+print(type(S))
+print(type(i))
+print(type(b))
