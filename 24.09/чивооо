@@ -1,0 +1,52 @@
+тз1
+a = int(input())
+b = int(input())
+c = int(input())
+s = a + b + c
+print(s)
+
+тз2
+a = int(input())
+b = int(input())
+s = a + b / 2
+print(s)
+
+
+тз3
+#тз3
+a = int(input())
+b = int(input())
+n = int(input())
+s = (15000 - (a + b + n))
+print(s)
+
+тз5
+a = int(input())
+b = int(input())
+c = int(input())
+s = (c - (a + b))
+print(s)
+
+
+тз6
+a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
+n = int(input())
+s = (a + b + c + d - n)
+print(s)
+
+тз7
+
+a = int(input())
+b = int(input())
+c = int(input())
+s = a + b + c
+print(s//60,s-s%60)
+
+#48 51 39
+
+
+
+
