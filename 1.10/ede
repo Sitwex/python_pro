@@ -1,0 +1,75 @@
+#тз 7
+a = int(input())
+b = int(input())
+c = int(input())
+s = a + b + c
+print(s//60,s-s%60)
+
+#тз 8
+n = int(input())
+k = int(input())
+a = k // n
+print(a)
+b = k % n
+print(b)
+
+
+#тз 9
+a = int(input())
+b = int(input())
+c = int(input())
+d = 2 * a + 3 * b - 4 * c
+print(d)
+
+
+#тз10
+x = int(input())
+y = int(input())
+c = 3 * x^2 + 2 * x * y - 6 * y^2
+print(c)
+
+
+#тз11
+a = int(input())
+b = int(input())
+print(float(a))
+print(float(b))
+
+
+#тз12
+s = int(input())
+n = int(input())
+p = int(input())
+r = p / 100
+m = (s * r * (1 + r) * n) / (12 * ((1 + r) * 12n - 1))
+print(m)
+
+
+
+#тз13
+p = int(input())
+r = int(input())
+h = int(input())
+v = p * r^2 * h
+print(v)
+
+
+#тз14
+a = abs(input())
+b = abs(input())
+c = abs(input())
+d = abs(input())
+e = abs(input())
+f = a + b + c + d + e
+print(f)
+
+
+#тз15
+a = int(input())
+print(a, a+1, a+2, sep = '\n')
+
+
+#тз16
+a = int(input())
+print(a^3)
+print(6*(a^2))
