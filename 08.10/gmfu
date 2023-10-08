@@ -1,0 +1,20 @@
+#тз18 
+a = int(input())
+b = int(a/2+0.9)
+print (b)
+
+#тз19 
+a = int(input())
+print(-(-a // 4))
+
+#тз20
+s = int(input())
+v1 = int(input())
+v2 = int(input())
+print(s / (v1+v2))
+
+#тз21  С=5/9 *(F-32)
+f = float(input())
+c = 5/9 *(f-32)
+print(c)
+
