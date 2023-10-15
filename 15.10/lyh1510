@@ -116,4 +116,13 @@ year2 = int(input("Введите год окончания обучения: ")
 #print(int(year2 + 1))
 print("Обучался" , year1 , "-", year2, "годы")
 
+pyautogui
+
+#1
+import pyautogui
+print(pyautogui.size())
+print(pyautogui.position())
+pyautogui.moveTo(1250,10)
+pyautogui.click()
+pyautogui.doubleClick()
 
