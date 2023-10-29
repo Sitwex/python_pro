@@ -1,0 +1,12 @@
+#1
+import pyautogui
+login=int(input())
+parol=int(input())
+x=876
+y=543
+if (login!=x):
+    pyautogui.alert(text="Логин неверен", title="Секретные данные", button="OK")
+if (parol!=y):
+        pyautogui.alert(text="Пароль неверен", title="Секретные данные", button="OK")
+if (login!=x and parol!=y):
+    pyautogui.alert(text="Логин и пароль неверны", title="Секретные данные", button="OK")
