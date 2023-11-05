@@ -1,0 +1,12 @@
+import pyautogui
+vlaga=int(input())
+tempera=int(input())
+if ((vlaga >= 60 and tempera <= 10) or (vlaga <= 30 and tempera >= 30)):
+    pyautogui.alert(text="trevoga!", title="trevoga!", button="OK")
+    pyautogui.moveTo(1250, 10)
+    pyautogui.click()
+    pyautogui.moveTo(1000, 230)
+    pyautogui.click(button = "left")
+if ((vlaga < 60 and tempera > 10) or (vlaga > 30 and tempera < 30)):
+    pyautogui.alert(text="vse ok", title="vse ok", button="OK")
+
