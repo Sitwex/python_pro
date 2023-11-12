@@ -1,0 +1,35 @@
+#тз4
+import pyautogui
+a=int(input())
+b=int(input())
+c=int(input())
+d=int(input())
+if ((a>6) or (b>6) or (c>6) or (d>6)):
+    print("Замени от греха подальше")
+#if ((a<7) or (b<7) or (c<7) or (d<7)):
+else:
+    print("Всё хорошо, ехаем!")
+
+
+#тз6
+a=int(input())
+b=int(input())
+c=int(input())
+d=int(input())
+if (a+d == b-c):
+    print ("верно")
+else:
+    print("неверно")
+
+#тз7
+a=int(input())
+b=int(input())
+c=int(input())
+d=int(input())
+if a > b:
+    a = b
+if c > d:
+    c = d
+if a > c:
+    a = c
+print(a)
