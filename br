@@ -1,0 +1,24 @@
+#тз9
+x=int(input())
+y=int(input())
+chisla = [x, y]
+minnumb = min(chisla)
+print(minnumb)  
+
+#Тз10
+x=int(input())
+y=int(input())
+#t=str(input())
+#r=str(input())
+if (x&2==0 and y%2==0) or (x&2==1 and y%2==1):
+    print("YES")
+#elif (x%2==0 and y%2==1):
+#else:
+    #print("NO")
+    
+#tz11
+x=int(input())
+if (x%4==0 and x%100!=0) or (x%400==0):
+    print("YES")
+else:
+    print("NO")
