@@ -1,0 +1,53 @@
+#тз0
+print("введите пароль")
+x = 10
+x1=int(input())
+while(x1 != x):
+    print("пароль неверный")
+    x1=int(input())
+print("молодец")
+
+#тз1
+print("введите логин")
+x = 10
+y = 12
+x1=int(input())
+while(x1 != x):
+    print("логин неверный")
+    x1=int(input())
+#print("молодец")
+print("введите пароль")
+y1=int(input())
+while(y1 != y):
+    print("пароль неверный")
+    y1=int(input())
+print("успешный вход")
+
+#тз2
+print("введите логин и пароль")
+x = 10
+y = 12
+x1 = int(input())
+y1 = int(input())
+while(x1 != x or y1 != y):
+    print("Логин или пароль не верен")
+    x1 = int(input())
+    y1 = int(input())
+print("успешный вход")
+
+
+#тз3
+print("введите логин и пароль")
+x = 10
+y = 12
+x1 = int(input())
+y1 = int(input())
+while(x1 != x or y1 != y):
+    if(x1 != x):
+        print("Логин не верен")
+        x1 = int(input())
+    if(y1 != y):
+        print("Пароль не верен")
+        y1 = int(input())
+print("успешный вход")
+
