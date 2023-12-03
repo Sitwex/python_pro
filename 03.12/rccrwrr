@@ -1,0 +1,53 @@
+#тз4
+print("спрашиваю команду")
+x = str(input())
+while ("стоп"):
+    if(x == "супергерой"):
+        print("чилавек паук")
+        print("спрашиваю команду")
+        x = str(input())
+    if(x == "чтение"):
+        print("азбука")
+        print("спрашиваю команду")
+        x = str(input())
+    if(x == "видео"):
+        print("смешарики")
+        print("спрашиваю команду")
+        x = str(input())
+    if(x == "игра"):
+        print("тетрис")
+        print("спрашиваю команду")
+        x = str(input())
+        
+
+
+#тз5
+print("введите операцию")
+x = str(input())
+#y = int(input())
+#z = int(input())
+while ("стоп"):
+    if(x == "+"):
+        print("введите первое слагаемое")
+        y = int(input())
+        print("введите второе слагаемое")
+        z = int(input())
+        print(y+z)
+    if(x == "-"):
+        print("введите первое вычитаемое")
+        y = int(input())
+        print("введите второе вычитаемое")
+        z = int(input())
+        print(y-z)
+    if(x == "*"):
+        print("введите первый множиель")
+        y = int(input())
+        print("введите второй множитель")
+        z = int(input())
+        print(y*z)
+    if(x == "/"):
+       print("введите первое делимое")
+        y = int(input())
+        print("введите второе делимое")
+        z = int(input())
+        print(y/z)
