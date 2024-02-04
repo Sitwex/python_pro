@@ -1,0 +1,67 @@
+#1
+x=0
+a=0
+n=int(input())
+p = [ ]
+for b in range(n):
+    p.append(int(input()))
+for b in range(n):
+    if (b % 2 == 0):
+        x += b
+        a *= b
+print(x)
+print(a)
+
+
+#2
+x=0
+a=0
+n=int(input())
+p = [ ]
+for b in range(n):
+    p.append(int(input()))
+for b in range(n):
+    if (b < 0):
+        x += p[b]
+        a *= p[b]
+print(x)
+print(a)
+
+
+#3
+x=0
+a=0
+n=int(input())
+p = [ ]
+for b in range(n):
+    p.append(int(input()))
+for b in range(n):
+    if (p[b] % 2 == 0):
+        x += p[b]
+        #a *= p[b]
+print(x)
+#print(a)
+
+
+#38YA84
+#4
+a=0
+n=int(input())
+p = [ ]
+for b in range(n):
+    p.append(int(input()))
+for b in range(n):
+    if (b != 0):
+        a *= p[b]
+print(a)
+
+#5
+x=0
+n=int(input())
+p = [ ]
+for b in range(n):
+    p.append(int(input()))
+for b in range(n):
+    if (b % 3 == 0):
+        x += b
+print(x)
