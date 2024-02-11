@@ -1,0 +1,32 @@
+#5
+x=0
+n=int(input())
+p = [ ]
+for b in range(n):
+    p.append(int(input()))
+for b in range(n):
+    if (b % 3 == 0):
+        x += b
+print(x)
+
+#6
+x=0
+n=int(input())
+p = [ ]
+for b in range(n):
+    p.append(int(input()))
+for b in range(n):
+    if (b % 3 == 1):
+        x += b
+print(x)
+
+#7
+x=0
+n=int(input())
+p = [ ]
+for b in range(n):
+    p.append(int(input()))
+for b in range(n):
+    if (p[b] > b):
+        x += 1
+print(x)
