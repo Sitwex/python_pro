@@ -1,0 +1,15 @@
+#-1
+h = 14
+w = 10
+def draw_box(h,w):
+    for i in range(h):
+        print("*" + ([" ", "*"][i in [0,5]]) * 10 + "*")
+draw_box(h,w)
+
+#0
+def draw_triangle():
+    for i in range(1,11):
+        print("*" * i)
+draw_triangle()
+
+
