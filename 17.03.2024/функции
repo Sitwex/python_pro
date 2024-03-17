@@ -1,0 +1,16 @@
+def f (n):
+    print("privet", n)
+f("Egor")
+f("Polina")
+f(input())
+
+#1
+def a (f1,b1):
+    for i in range(b1 // 2 + 1):
+        print(f1 * (i + 1))
+    for i in range(b1 // 2, 0,-1):
+        print(f1 * i)
+f = input()
+b = int(input())
+a(f,b)
+
