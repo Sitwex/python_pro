@@ -1,0 +1,20 @@
+#2
+def fio (f_f, i_f, o_f):
+    return f_f[0] + i_f[0] + o_f[0]
+f = str(input())
+i = str(input())
+o = str(input())
+print(fio(f, i, o))
+
+#https://natkaida.github.io/portfolio/challenges_19/
+
+
+#3
+def summa (num):
+    s = 0
+    while num > 0:
+        s += n % 10
+        num // 10
+    print(s)
+n = int(input())
+print(summa(n))
