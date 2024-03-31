@@ -10,11 +10,13 @@ print(fio(f, i, o))
 
 
 #3
-def summa (num):
+def summa (n):
     s = 0
-    while num > 0:
+    while (n >= 10):
         s += n % 10
-        num // 10
+        n = n // 10
+    s += n
+    return s
     print(s)
-n = int(input())
-print(summa(n))
+#n = int(input())
+print(summa(int(input())))
