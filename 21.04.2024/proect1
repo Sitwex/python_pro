@@ -1,0 +1,41 @@
+import random
+import pyautogui
+print("Игра Камень Ножницы Бумага")
+#print("Как вас зовут?")
+#s = str(input())
+user = input("Сделайте выбор — камень, ножницы или бумага: ")
+act = ["камень", "бумага", "ножницы"]
+comp = random.choice(act)
+if ( user == "камень") and (comp == "ножницы"):
+    pyautogui.alert(" user выйграл!!! ")
+if ( user == "камень") and (comp == "бумага"):
+    pyautogui.alert(" comp выйграл!!! ")
+if ( user == "камень") and (comp == "камень"):
+    pyautogui.alert(" ничья!!! ")
+if ( user == "ножницы") and (comp == "ножницы"):
+    pyautogui.alert(" ничья!!! ")
+if ( user == "ножницы") and (comp == "бумага"):
+    pyautogui.alert(" user выйграл!!! ")
+if ( user == "ножницы") and (comp == "камень"):
+    pyautogui.alert(" comp выйграл!!! ")
+if ( user == "бумага") and (comp == "ножницы"):
+    pyautogui.alert(" comp выйграл!!! ")
+if ( user == "бумага") and (comp == "бумага"):
+    pyautogui.alert(" comp выйграл!!! ")
+if ( user == "бумага") and (comp == "камень"):
+    pyautogui.alert(" user выйграл!!! ")
+
+##########
+print("Калькулятор")
+number1 = int(input("Введите первое число: "))
+number2 = int(input("Введите второе число: "))
+operation = input("Какую операцию нужно провести? ")
+if (operation == "+"):
+    print(number1 + number2)
+if (operation == "-"):
+    print(number1 - number2)
+if (operation == "*"):
+    print(number1 * number2)
+if (operation == "/"):
+    print(number1 / number2)
+еще ушадай число можн добавить но хзхз мне леьь
