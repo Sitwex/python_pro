@@ -1,51 +1,50 @@
+# добавляем библиотеки
 import random
 from random import randint
 import pyautogui
-
+#приветствие
 print("Как тебя зовут?")
 s = str(input())
 print(f"{s}, Выбери действие:")
 print("Нажми 1 если выбираешь Камень Ножницы Бумага")
 print("Нажми 2 если выбираешь Угадай число")
 print("Нажми 3 если выбираешь Калькулятор")
-
 deystvie = int(input())
-
+# если игрок выбрал "1", то начинается действие "камень, ножницы, бумага"
 if ( deystvie == 1):
     print("Игра Камень Ножницы Бумага")
     user = input("Сделай выбор — камень, ножницы или бумага: \n")
     act = ["камень", "бумага", "ножницы"]
     comp = random.choice(act)
-    
+    #если игрок выбрал камень
     if ( user == "камень") and (comp == "ножницы"):
         pyautogui.alert(f" {s} выйграл!!! ")
     if ( user == "камень") and (comp == "бумага"):
         pyautogui.alert(f" {s} проиграл!!! ")
     if ( user == "камень") and (comp == "камень"):
         pyautogui.alert(" ничья!!! ")
-        
+    #если игрок выбрал ножницы
     if ( user == "ножницы") and (comp == "ножницы"):
         pyautogui.alert(" ничья!!! ")
     if ( user == "ножницы") and (comp == "бумага"):
         pyautogui.alert(f" {s} выйграл!!! ")
     if ( user == "ножницы") and (comp == "камень"):
         pyautogui.alert(f" {s} проиграл!!! ")
-        
+    #если игрок выбрал бумагу    
     if ( user == "бумага") and (comp == "ножницы"):
         pyautogui.alert(f" {s} проиграл!!! ")
     if ( user == "бумага") and (comp == "бумага"):
         pyautogui.alert(" ничья!!! ")
     if ( user == "бумага") and (comp == "камень"):
         pyautogui.alert(f" {s} выйграл!!! ")
-        
+    #если игрок выбрал "2", то начинается действие "угадай число"
 if ( deystvie == 2):
     print("Игра Угадай число")
     
     print("Максимальное число?")
     x1 = int(input())
-    x = randint(1, x1)
-    attempt = 0
-
+    x = randint(1, x1) #число которое надо угадать
+    attempt = 0  #счетчик попыток
     while True:
         print(f"Я загадал число от 1 до {x1}, угадай его")
         user_num = int(input("Твоя догадка: "))
@@ -57,7 +56,7 @@ if ( deystvie == 2):
             print("Моё число меньше.")
         elif user_num < x:
             print("Моё число больше")
-
+ # если игрок ввел "3", то начинается действие "калькулятор"           
 if ( deystvie == 3):
     print("Калькулятор")
     number1 = int(input("Введи первое число: "))
@@ -71,119 +70,3 @@ if ( deystvie == 3):
         print(number1 * number2)
     if (operation == "/"):
         print(number1 / number2)
-    
-
-или   
-
-
-import random
-from random import randint
-import pyautogui
-
-print("Как тебя зовут?")
-s = str(input())
-print(f"{s}, Выбери действие:")
-print("Нажми 1 если выбираешь Камень Ножницы Бумага")
-print("Нажми 2 если выбираешь Угадай число")
-print("Нажми 3 если выбираешь Калькулятор")
-
-deystvie = int(input())
-prs = 0
-while(prs == 0):
-    if ( deystvie == 1):
-        print("Игра Камень Ножницы Бумага")
-        user = input("Сделай выбор — камень, ножницы или бумага: \n")
-        act = ["камень", "бумага", "ножницы"]
-        comp = random.choice(act)
-
-        if ( user == "камень") and (comp == "ножницы"):
-            pyautogui.alert(f" {s} выйграл!!! ")
-        if ( user == "камень") and (comp == "бумага"):
-            pyautogui.alert(f" {s} проиграл!!! ")
-        if ( user == "камень") and (comp == "камень"):
-            pyautogui.alert(" ничья!!! ")
-
-        if ( user == "ножницы") and (comp == "ножницы"):
-            pyautogui.alert(" ничья!!! ")
-        if ( user == "ножницы") and (comp == "бумага"):
-            pyautogui.alert(f" {s} выйграл!!! ")
-        if ( user == "ножницы") and (comp == "камень"):
-            pyautogui.alert(f" {s} проиграл!!! ")
-
-        if ( user == "бумага") and (comp == "ножницы"):
-            pyautogui.alert(f" {s} проиграл!!! ")
-        if ( user == "бумага") and (comp == "бумага"):
-            pyautogui.alert(" ничья!!! ")
-        if ( user == "бумага") and (comp == "камень"):
-            pyautogui.alert(f" {s} выйграл!!! ")
-        print("заново?")
-        print("если хочешь поиграть снова напиши 0, если нет, то 1  ")
-        ppp = int(input())
-        if ( ppp == 0):
-            prs = 0
-        if ( ppp == 1):
-            prs = 1
-            print(f"{s}, Выбери действие:")
-            print("Нажми 1 если выбираешь Камень Ножницы Бумага")
-            print("Нажми 2 если выбираешь Угадай число")
-            print("Нажми 3 если выбираешь Калькулятор")
-            deystvie = int(input())
-        
-while(prs == 0):
-    if ( deystvie == 2):
-        print("Игра Угадай число")
-
-        print("Максимальное число?")
-        x1 = int(input())
-        x = randint(1, x1)
-        attempt = 0
-
-        while True:
-            print(f"Я загадал число от 1 до {x1}, угадай его")
-            user_num = int(input("Твоя догадка: "))
-            attempt += 1
-            if user_num == x:
-                print(f"Ты угадал число, молодец!\nКоличество твоих попыток: {attempt}\nСпасибо за игру!")
-                break
-            elif user_num > x:
-                print("Моё число меньше.")
-            elif user_num < x:
-                print("Моё число больше")
-            print("если хочешь поиграть снова напиши 0, если нет, то 1  ")
-            ppp = int(input())
-            if ( ppp == 0):
-                prs = 0
-            if ( ppp == 1):
-                prs = 1
-                print(f"{s}, Выбери действие:")
-                print("Нажми 1 если выбираешь Камень Ножницы Бумага")
-                print("Нажми 2 если выбираешь Угадай число")
-                print("Нажми 3 если выбираешь Калькулятор")
-                deystvie = int(input())
-
-while(prs == 0):
-    if ( deystvie == 3):
-        print("Калькулятор")
-        number1 = int(input("Введи первое число: "))
-        number2 = int(input("Введи второе число: "))
-        operation = input("Какую операцию нужно провести? ")
-        if (operation == "+"):
-            print(number1 + number2)
-        if (operation == "-"):
-            print(number1 - number2)
-        if (operation == "*"):
-            print(number1 * number2)
-        if (operation == "/"):
-            print(number1 / number2)
-        print("если хочешь поиграть снова напиши 0, если нет, то 1  ")
-        ppp = int(input())
-        if ( ppp == 0):
-            prs = 0
-        if ( ppp == 1):
-            prs = 1
-            print(f"{s}, Выбери действие:")
-            print("Нажми 1 если выбираешь Камень Ножницы Бумага")
-            print("Нажми 2 если выбираешь Угадай число")
-            print("Нажми 3 если выбираешь Калькулятор")
-            deystvie = int(input())
-
